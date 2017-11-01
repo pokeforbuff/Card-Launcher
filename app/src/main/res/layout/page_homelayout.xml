@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/RedThemeColorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:layout_alignParentTop="true">
+
+            <ImageButton
+                android:id="@+id/shortcut_open_store"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.25dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/RedThemeColorPrimaryDark"
+                android:scaleType="centerInside"
+                android:src="@drawable/google_playstore"
+                android:tint="@color/RedThemeColorAccent" />
+
+            <ImageButton
+                android:id="@+id/shortcut_open_instagram"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.25dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/RedThemeColorPrimaryDark"
+                android:scaleType="centerInside"
+                android:src="@drawable/instagram_new"
+                android:tint="@color/RedThemeColorAccent" />
+
+            <ImageButton
+                android:id="@+id/shortcut_open_newsstand"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.25dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/RedThemeColorPrimaryDark"
+                android:scaleType="centerInside"
+                android:src="@drawable/google_newsstand"
+                android:tint="@color/RedThemeColorAccent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <ImageButton
+                android:id="@+id/shortcut_open_whatsapp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.25dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/RedThemeColorPrimaryDark"
+                android:scaleType="centerInside"
+                android:src="@drawable/whatsapp"
+                android:tint="@color/RedThemeColorAccent" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

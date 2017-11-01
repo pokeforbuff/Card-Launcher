@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="RedThemeColorPrimary">#AA3939</color>
+    <color name="RedThemeColorPrimaryDark">#801515</color>
+    <color name="RedThemeColorAccent">#FFAAAA</color>
+    <color name="RedThemeTranslucentColorPrimaryDark">#59801515</color>
+
+    <color name="GreenThemeColorPrimary">#297C46</color>
+    <color name="GreenThemeColorPrimaryDark">#105D2A</color>
+    <color name="GreenThemeColorAccent">#7CBB92</color>
+    <color name="GreenThemeTranslucentColorPrimaryDark">#59105D2A</color>
+</resources>

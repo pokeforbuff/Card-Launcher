@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/app_grid_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_card"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp" />
+
+    <LinearLayout
+        android:id="@+id/top_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/search_apps_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/RedThemeColorPrimary"
+                app:cardCornerRadius="5dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/RedThemeColorAccent"
+                    app:cardCornerRadius="5dp">
+
+                    <ImageButton
+                        android:id="@+id/shortcut_open_google_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/RedThemeColorAccent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/google_app"
+                        android:tint="@color/RedThemeColorPrimary" />
+
+                </android.support.v7.widget.CardView>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:text="APPS"
+                android:textStyle="bold"
+                android:textColor="@color/RedThemeColorPrimary"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_weight="2"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/RedThemeColorPrimary"
+                app:cardCornerRadius="5dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/RedThemeColorAccent"
+                app:cardCornerRadius="5dp">
+
+                <ImageButton
+                    android:id="@+id/shortcut_open_store"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/RedThemeColorAccent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/google_playstore"
+                    android:tint="@color/RedThemeColorPrimary" />
+
+                </android.support.v7.widget.CardView>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/uninstall_viewgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hide_card"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/RedThemeColorAccent"
+                app:cardCornerRadius="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="HIDE"
+                    android:textColor="@color/RedThemeColorPrimary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/uninstall_card"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                app:cardBackgroundColor="@color/RedThemeColorAccent"
+                app:cardCornerRadius="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="UNINSTALL"
+                    android:textColor="@color/RedThemeColorPrimary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </android.support.v7.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/cancel_uninstall_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:backgroundTint="@color/RedThemeColorPrimaryDark"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_close"
+                android:tint="@color/RedThemeColorAccent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

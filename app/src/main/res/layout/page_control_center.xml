@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/control_center_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/RedThemeColorPrimaryDark"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/contol_center_panel"
+            android:layout_width="360dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:weightSum="3">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/RedThemeColorAccent"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:id="@+id/search_apps"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:hint="SEARCH APPS"
+                        android:textColorHint="@color/RedThemeColorPrimary"
+                        android:textColor="@color/RedThemeColorPrimary"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cc_viewgroup_1"
+                android:layout_width="350dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:weightSum="3">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/RedThemeColorAccent"
+                    app:cardCornerRadius="5dp">
+
+                    <ToggleButton
+                        android:id="@+id/toggle_btn_wifi"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/wifi_toggle"
+                        android:backgroundTint="@color/RedThemeColorPrimary"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/RedThemeColorAccent"
+                    android:textColor="@color/RedThemeColorPrimary"
+                    app:cardCornerRadius="5dp">
+
+                    <ToggleButton
+                        android:id="@+id/toggle_btn_flashlight"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/toggle_flashlight"
+                        android:backgroundTint="@color/RedThemeColorPrimary"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/RedThemeColorAccent"
+                    android:textColor="@color/RedThemeColorPrimary"
+                    app:cardCornerRadius="5dp">
+
+                    <ToggleButton
+                        android:id="@+id/toggle_btn_bt"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/bt_toggle"
+                        android:backgroundTint="@color/RedThemeColorPrimary"
+                        android:textOff=""
+                        android:textOn="" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cc_viewgroup_2"
+                android:layout_width="350dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:weightSum="3">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/RedThemeColorAccent"
+                    android:textColor="@color/RedThemeColorPrimary"
+                    app:cardCornerRadius="5dp">
+
+                    <ToggleButton
+                        android:id="@+id/toggle_btn_screenrot"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/ic_screen_rotation"
+                        android:backgroundTint="@color/RedThemeColorPrimary"
+                        android:textOff=""
+                        android:textOn="" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/RedThemeColorAccent"
+                    android:textColor="@color/RedThemeColorPrimary"
+                    app:cardCornerRadius="5dp">
+
+                    <SeekBar
+                        android:id="@+id/brightness_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:progressTint="@color/RedThemeColorPrimary"
+                        android:thumbTint="@color/RedThemeColorPrimary" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:backgroundTint="@color/RedThemeColorAccent"
+                android:textColor="@color/RedThemeColorPrimary"
+                app:cardCornerRadius="5dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/searched_apps_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/contol_center_panel"
+            android:background="@color/RedThemeColorAccent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

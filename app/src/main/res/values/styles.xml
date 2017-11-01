@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="RedAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/RedThemeColorPrimary</item>
+        <item name="colorPrimaryDark">@color/RedThemeColorPrimaryDark</item>
+        <item name="colorAccent">@color/RedThemeColorAccent</item>
+        <item name="android:navigationBarColor">@color/RedThemeColorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/RedThemeColorPrimaryDark</item>
+
+    </style>
+
+    <style name="GreenAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/GreenThemeColorPrimary</item>
+        <item name="colorPrimaryDark">@color/GreenThemeColorPrimaryDark</item>
+        <item name="colorAccent">@color/GreenThemeColorAccent</item>
+        <item name="android:navigationBarColor">@color/GreenThemeColorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/GreenThemeColorPrimaryDark</item>
+
+    </style>
+
+</resources>
